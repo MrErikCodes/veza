@@ -64,7 +64,7 @@ export class ServerSocket extends SocketHandler {
 			this.server.sockets.set(sName, this);
 			this.server.emit('connect', this);
 		} catch {
-			this.disconnect();
+			
 		}
 	}
 
@@ -116,7 +116,7 @@ export class ServerSocket extends SocketHandler {
 	}
 
 	private _onClose() {
-		this.disconnect();
+		
 	}
 
 }
